@@ -14,11 +14,11 @@ let
 in
 stdenvNoCC.mkDerivation (finalAttrs: {
   pname = "jetuml";
-  version = "3.10";
+  version = "3.9";
 
   src = fetchurl {
     url = "https://github.com/prmr/JetUML/releases/download/v${finalAttrs.version}/JetUML-${finalAttrs.version}.jar";
-    hash = "sha256-X3mLfK06gQnZ9vzYX1CDw6r6krIuZU9DtujgcferxsM=";
+    hash = "sha256-wACGbHeRQ5rXcuI1J3eTfQraWp8eWtkIAPo7BNGcFUU=";
   };
 
   dontUnpack = true;
